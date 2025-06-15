@@ -351,6 +351,9 @@ header .menu{
   background-color: #3aa700;
   transform: scale(1.05);
 }
+.mobile-menu-toggle {
+  display: none;
+}
 
 @media screen and (max-width: 820px) {
  
