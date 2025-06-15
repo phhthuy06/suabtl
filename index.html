@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <!-- header -->
+        <header>
+          <div class="logo">Films.15</div>
+          <div class="menu-container">
+              <ul class="menu-list">
+                <li class="menu-list-item active"><a href="index.html">Trang chủ</a></li>          
+                <li class="menu-list-item dropdown">
+                  <a href="theloai.html">Thể loại</a>
+                  <ul class="sub-menu">
+                    <li><a href="theloai.html?genre=hanhdong">Hành Động</a></li>
+                    <li><a href="theloai.html?genre=tinhcam">Tình cảm </a></li>
+                    <li><a href="theloai.html?genre=haihuoc">Hài Hước</a></li>
+                    <li><a href="theloai.html?genre=anime">Anime</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list-item dropdown">
+                  <a href="quocgia.html">Quốc Gia</a>
+                  <ul class="sub-menu">
+                    <li><a href="quocgia.html?country=vietnam">Việt Nam</a></li>
+                    <li><a href="quocgia.html?country=hanquoc">Hàn Quốc</a></li>
+                    <li><a href="quocgia.html?country=my">Mỹ</a></li>
+                    <li><a href="quocgia.html?country=trungquoc">Trung Quốc</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list-item"><a href="lienhe.html">Liên hệ</a></li>
+                <li class="menu-list-item dropdown">
+                  <a href="#">Tài khoản</a>
+                  <ul class="sub-menu">
+                    <li><a href="login.html">Đăng nhập</a></li>
+                    <li><a href="signup.html">Đăng kí</a></li>
+                  </ul>
+                </li>
+              </div>
+              <!--search-->
+              <div class="search-wrapper">
+                  <svg id="toggleSearch" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" style="cursor:pointer; width: 24px; height: 24px;">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                  </svg>
+                  <input type="text" id="searchInput" placeholder="Tìm kiếm phim..." style="display:none; margin-left: 10px;" />
+                </div>
+                <p id="searchResult" style="color: red;"></p>
+                
+           
+      </header>
+    <!-- slider -->
+    <div class="slider">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active" id="The Meg">
+                <img src="tchu4.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>The Meg</h2>
+                    <div class="rating"> ★★★★★</div>
+                    <p>
+                        Kẻ săn mồi cổ đại trỗi dậy từ đáy vực sâu...
+                        Kích thước khổng lồ. Tốc độ không tưởng. Cơn ác mộng dưới lòng đại dương đang chờ săn mồi.
+                    </p>
+                    <a href="chitiet.html?id=themeg" class="watch-btn">Chi tiết</a>
+
+                </div>
+            </div>
+            <div class="item" id="Harry Potter">
+                <img src="tchu2.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>Harry Potter</h2>
+                    <div class="rating"> ★★★★★</div>
+                    <p>
+                        “Chuyến tàu số 9¾ không chỉ đưa bạn đến Hogwarts, mà còn mở ra cả một thế giới kỳ diệu.”
+                    </p>
+                    <a href="chitiet.html?id=harrypotter" class="watch-btn">Chi tiết</a>
+
+                </div>
+            </div>
+            <div class="item" id="The Little Mermaid">
+                <img src="tchu3.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2> The Little Mermaid </h2>
+                    <div class="rating"> ★★★★★</div>
+                    <p>
+                        Cô đánh đổi giọng hát… để theo đuổi trái tim mình.
+                        Một câu chuyện cổ tích kinh điển về tình yêu, tự do và khát khao được là chính mình.
+                    </p>
+                    <a href="chitiet.html?id=thelittle" class="watch-btn">Chi tiết</a>
+
+                </div>
+            </div>
+            <div class="item" id="Người Khởi Lửa">
+                <img src="tchu5.webp">
+                <div class="content">
+                    <p>PHIM HOT</p>
+                    <h2>Người Khởi Lửa</h2>
+                    <div class="rating"> ★★★★★</div>
+                    <p>
+                        “Sức mạnh nằm trong đôi mắt cô bé – và nó có thể đốt cháy cả thế giới.”
+                    </p>
+                    <a href="chitiet.html?id=nguoikhoilua" class="watch-btn">Chi tiết</a>
+
+                </div>
+            </div>
+            <div class="item" id="Venom">
+                <img src="tchu1.webp">
+                <div class="content" id="Venom">
+                    <p>PHIM HOT</p>
+                    <h2>Venom</h2>
+                    <div class="rating"> ★★★★★</div>
+                    <p>
+                        Ký sinh vật ngoài hành tinh. Người đàn ông bị nguyền rủa. Một mối liên kết chết người.
+                 Khi chính nghĩa và bóng tối hòa làm một, kẻ phản anh hùng được sinh ra.
+                    </p>
+                    <a href="chitiet.html?id=venom" class="watch-btn">Chi tiết</a>
+
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="tchu4,.webp">
+                
+            </div>
+            <div class="item">
+                <img src="tchu2,.webp">
+            </div>
+            <div class="item">
+                <img src="tchu3,.webp"> 
+            </div>
+            <div class="item">
+                <img src="tchu5,.webp">
+            </div>
+            <div class="item">
+                <img src="tchu1,.webp">
+            </div>
+        </div>
+    </div>
+
+<!-- Modal video -->
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); z-index:9999;">
+    <!-- Nút đóng -->
+    <span onclick="closeModal()" style="position:absolute; top:20px; right:30px; font-size:40px; color:white; cursor:pointer;">&times;</span>
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <h3>Films.15</h3>
+            <p>Website xem phim trực tuyến tổng hợp những bộ phim nổi bật theo thể loại và quốc gia.</p>
+          </div>
+      
+          <div class="footer-contact">
+            <h4>Liên hệ</h4>
+            <ul>
+              <li>📞 0901 234 567</li>
+              <li>📧 contact@films15.vn</li>
+              <li>📍 123 Nguyễn Văn A, Q1, TP. HCM</li>
+            </ul>
+          </div>
+      
+          <div class="footer-social">
+            <h4>Kết nối</h4>
+            <ul>
+              <li><a href="https://facebook.com/films15" target="_blank">🌐 Facebook</a></li>
+              <li><a href="#">💬 Zalo</a></li>
+              <li><a href="#">📺 YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Films.15. All rights reserved.</p>
+        </div>
+      </footer>
+      
+</div>
+  
+<script src="app.js"></script>
+</body>
+</html>
